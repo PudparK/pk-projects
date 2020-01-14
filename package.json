@@ -1,0 +1,11 @@
+{
+  "devDependencies": {},
+  "name": "pk-projects",
+  "version": "1.0.0",
+  "description": "A collection of Vanilla JS, Sass => CSS, and HTML projects.",
+  "main": "index.js",
+  "repository": "https://github.com/PudparK/pk-projects",
+  "author": "Paul Barron",
+  "license": "MIT",
+  "private": false
+}
