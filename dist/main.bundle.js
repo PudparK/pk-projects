@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../img/pk-development.png */ \"./src/assets/img/pk-development.png\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \".hello {\\n  color: red;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/assets/sass/style.sass?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../img/pk-development.png */ \"./src/assets/img/pk-development.png\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \".hello {\\n  color: red;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") no-repeat;\\n  height: 400px; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/assets/sass/style.sass?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -178,14 +178,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
-/***/ "./src/assets/js/console.js":
-/*!**********************************!*\
-  !*** ./src/assets/js/console.js ***!
-  \**********************************/
+/***/ "./src/assets/js/logger.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/logger.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function logIt (msg) {\r\n  console.log(msg);\r\n}\r\n\r\nmodule.exports = logIt;\n\n//# sourceURL=webpack:///./src/assets/js/console.js?");
+eval("function logIt (msg) {\r\n  console.log(msg);\r\n}\r\n\r\nmodule.exports = logIt;\n\n//# sourceURL=webpack:///./src/assets/js/logger.js?");
 
 /***/ }),
 
@@ -208,7 +208,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/sass/style.sass */ \"./src/assets/sass/style.sass\");\n/* harmony import */ var _assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_img_pk_development_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/pk-development.png */ \"./src/assets/img/pk-development.png\");\n/* harmony import */ var _assets_js_console_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/js/console.js */ \"./src/assets/js/console.js\");\n/* harmony import */ var _assets_js_console_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_js_console_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n  const element = document.createElement('div');\r\n  const btn = document.createElement('button');\r\n\r\n  // Lodash, currently included via a script, is required for this line to work\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n\r\n  btn.innerHTML = 'Click me and check the console!';\r\n\r\n  element.appendChild(btn);\r\n  \r\n  element.classList.add('hello');\r\n\r\n  const myLogo = new Image();\r\n\r\n\tmyLogo.src = _assets_img_pk_development_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\n\r\n\tbtn.onclick = () => alert(\"Howdy World\");\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/sass/style.sass */ \"./src/assets/sass/style.sass\");\n/* harmony import */ var _assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_sass_style_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_img_pk_development_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/img/pk-development.png */ \"./src/assets/img/pk-development.png\");\n/* harmony import */ var _assets_js_logger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/js/logger.js */ \"./src/assets/js/logger.js\");\n/* harmony import */ var _assets_js_logger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_js_logger_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n_assets_js_logger_js__WEBPACK_IMPORTED_MODULE_3___default()(\"Logger here\");\r\n\r\nfunction component() {\r\n  const element = document.createElement('div');\r\n  const btn = document.createElement('button');\r\n\r\n  // Lodash, currently included via a script, is required for this line to work\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n\r\n  btn.innerHTML = 'Click me and check the console!';\r\n\r\n  element.appendChild(btn);\r\n  \r\n  element.classList.add('hello');\r\n\r\n  const myLogo = new Image();\r\n\r\n\tmyLogo.src = _assets_img_pk_development_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\n\r\n\tbtn.onclick = () => {\r\n\t\t_assets_js_logger_js__WEBPACK_IMPORTED_MODULE_3___default()(\"Hello\");\r\n\t\talert(\"Hello World\");\r\n\t}\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

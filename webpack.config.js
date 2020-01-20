@@ -4,7 +4,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  watch: true,
+  devServer: {
+    contentBase: './dist'
+  },
   entry: './src/index.js',
   output: {
     filename: '[name].bundle.js',

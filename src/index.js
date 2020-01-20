@@ -3,7 +3,9 @@ import _ from 'lodash';
 import './assets/sass/style.sass';
 import Logo from './assets/img/pk-development.png';
 
-import logIt from './assets/js/console.js';
+import logIt from './assets/js/logger.js';
+
+logIt("Logger here");
 
 function component() {
   const element = document.createElement('div');
@@ -22,7 +24,10 @@ function component() {
 
 	myLogo.src = Logo;
 
-	btn.onclick = () => alert("Howdy World");
+	btn.onclick = () => {
+		logIt("Hello");
+		alert("Hello World");
+	}
 
   return element;
 }
